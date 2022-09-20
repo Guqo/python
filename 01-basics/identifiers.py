@@ -47,10 +47,10 @@ komentáře, proč byl identifikátor použit nesprávně. Navrhněte pod koment
 import_from = 'China'
 
 x = 0
-global = 1
+# global = 1 - klíčové slovo použito
 PI = 3.14
 city = "Opava"
-hilda@sspu-opava.cz = 'Hilda Dokonalá'
+# hilda@sspu-opava.cz = 'Hilda Dokonalá' - @ a -
 password2 = 'TajneHeslo'
-007agent = 'James Bond'
+# 007agent = 'James Bond' - nesmí se kombinovat string s int
 

@@ -8,7 +8,7 @@ Definice uvnitř modulů mohou být importovány do jiných modulů nebo do inte
 Připojení modulů provádíme klíčovým slovem import.
 '''
 
-'''
+''';;;
 Příklad importu modulu math. V tomto případě můžeme pomocí tečkového operátoru využít všechny atributy a funkce,
 které nám modul math nabízí.
 '''
@@ -75,3 +75,6 @@ Použijte vhodné moduly v Pythonu (včetně jejich případné instalace) k tom
 K řešení prvního úkolu je možné doporučit importovat interní modul datetime
 Řešení dalších dvou úkolů můžete odvodit z příkladů v dokumentaci k externímu modulu dateutil - viz https://pypi.org/project/python-dateutil/
 """
+
+import datetime
+print(datetime)

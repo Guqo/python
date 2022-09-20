@@ -50,3 +50,20 @@ aspoň jednu podmínku if a funkci print(). Dodržte správné odsazování kód
 Do konzole vypište nejprve docstring vaší funkce a potom zavolejte funkci samotnou.   
 """
 
+
+def funkce(parametr):
+    """
+    Jednoduchá ukázková funkce
+    parametr:  číselný údaj, který budeme testovat v cyklu
+    bez návratové hodnoty
+    """
+    for i in range(1,10):
+        if i > parametr:
+            print(f'i = {i} parametr = {parametr} : hodne')
+        elif i == parametr:
+            print(f'i = {i} parametr = {parametr} : dost')
+        else:
+            print(f'i = {i} parametr = {parametr} : malo')
+
+funkce(4)
+print(funkce.__doc__)
