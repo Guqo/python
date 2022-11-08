@@ -77,4 +77,16 @@ K řešení prvního úkolu je možné doporučit importovat interní modul date
 """
 
 import datetime
-print(datetime)
+from dateutil.rrule import *
+from dateutil.easter import *
+from dateutil.relativedelta import *
+
+aktualniCas = datetime.datetime.now()
+print("Aktuální datum a čas je: %s" % aktualniCas)
+
+thisYear = aktualniCas.year
+
+for i in range(5):
+    print(easter(thisYear + i + 1))
+
+print(rrule(YEARLY, dtstart=aktualniCas, bymonth=12, bymonthday=24, byweekday=SU)[0].year)
